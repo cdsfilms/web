@@ -36,8 +36,8 @@ sends keyframes to Claude through the Message Batches API for visual scene under
 Claude to name characters and polish the draft. Its output feeds Singularity Pencil, our
 screenplay-native production workspace (writing, rewrite, storyboard, breakdown, shoot planning),
 now in a closed pilot. Our third product, 1ManABnd, is a local-first desktop app where AI agents
-running on Claude Code plan and draft work under human approval; we use it to run our own
-operations. All three are working software, built and tested in-house.
+running on Claude Code plan and draft work under human approval; the founder uses it
+internally. All three are working software, built and used in-house.
 
 ## Claude use cases (as the code stands today)
 
@@ -136,6 +136,16 @@ studio. What the repos and live URLs do show:
 - Claude is not described as the only model used: FTS also uses Whisper and has a local mode;
   1ManABnd supports Codex; Singularity Pencil is BYOK with OpenAI or Anthropic.
 - 1ManABnd is not described as autonomous; human approval is the core design.
+
+## Program eligibility (checked 2026-10-07 against https://claude.com/programs/startups)
+
+- Founded in the last 5 years: yes (2024). No VC funding required; bootstrapped qualifies.
+- Company email on the website's domain: cdsf@cdsfilms.com on cdsfilms.com. Apply from a Claude
+  Console account signed in with that address, not a personal Gmail.
+- The public page does not list incorporation as a requirement. If the form asks for it, answer
+  "Not yet incorporated" and accept that this may decide the outcome.
+- API credits expire six months after grant; the budget above is sized for that window
+  (roughly 20–40 feature-length FTS runs at $450).
 
 ## Pre-submission items (resolved 2026-10-07)
 

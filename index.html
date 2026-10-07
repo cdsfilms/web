@@ -98,6 +98,9 @@
   .products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   @media (max-width: 920px) { .products { grid-template-columns: 1fr; } }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 26px 24px 22px; display: flex; flex-direction: column; }
+  .shot { margin: 0 0 20px; }
+  .shot img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; border-radius: 8px; border: 1px solid var(--line); background: #1f231e; }
+  .shot figcaption { margin-top: 8px; font-size: 13px; line-height: 1.45; color: var(--faint); }
   .card .num { font-size: 13px; color: var(--faint); letter-spacing: .06em; margin: 0 0 10px; }
   .card h3 { font-size: 24px; font-weight: 500; margin: 0 0 4px; line-height: 1.2; }
   .card .sub { font-size: 14px; color: var(--faint); margin: 0 0 14px; }
@@ -180,6 +183,10 @@
 
       <div class="products">
         <article class="card" id="fts">
+          <figure class="shot">
+            <a href="img/fts.jpg"><img src="img/fts.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="FTS desktop app in cloud mode, with Claude Sonnet set as the vision model, Claude Opus as the text model, and the list of pipeline stages from audio extraction to keyframes."></a>
+            <figcaption>Cloud mode, before a film is loaded.</figcaption>
+          </figure>
           <p class="num">01</p>
           <h3 class="serif">FTS</h3>
           <p class="sub">Film-to-Screenplay</p>
@@ -197,6 +204,10 @@
         </article>
 
         <article class="card" id="singularity-pencil">
+          <figure class="shot">
+            <a href="img/sp.jpg"><img src="img/sp.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Singularity Pencil screenplay editor showing a short two-scene sample script in Vietnamese, the scene outline on the left and the workflow bar from Story Guide to shoot at the bottom."></a>
+            <figcaption>The editor with a short sample script.</figcaption>
+          </figure>
           <p class="num">02</p>
           <h3 class="serif">Singularity Pencil</h3>
           <p class="sub">Screenplay-native production workspace</p>
@@ -215,6 +226,10 @@
         </article>
 
         <article class="card" id="1manabnd">
+          <figure class="shot">
+            <a href="img/omab.jpg"><img src="img/omab.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="1ManABnd project view for a demo project: an org chart with a lead agent and two specialist agents, and the form for assigning a task on the right."></a>
+            <figcaption>A demo project: one lead agent and two specialists.</figcaption>
+          </figure>
           <p class="num">03</p>
           <h3 class="serif">1ManABnd</h3>
           <p class="sub">Local-first AI-agent operating system</p>
@@ -271,7 +286,7 @@
           <h2 id="company-title" class="serif">Company</h2>
         </div>
         <p>CDS Films (CD Singularity Films) started in 2024 in Ho Chi Minh City as an independent film studio. The software grew out of that work: we build the tools our own screenplays and productions need.</p>
-        <p>We are bootstrapped and founder-led. Our products are early and built and tested in-house. Outside users get access through small, closed pilots first; today that is the Singularity Pencil pilot.</p>
+        <p>We are bootstrapped and founder-led. Our products are early, built and used in-house. Outside users get access through small, closed pilots first; today that is the Singularity Pencil pilot.</p>
       </div>
       <dl class="facts">
         <dt>Name</dt><dd>CDS Films</dd>

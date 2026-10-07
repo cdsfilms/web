@@ -1,0 +1,6 @@
+# GitHub Pages builds this repo with Jekyll. index.html has no front matter, so it is copied as-is.
+# docs/ holds internal working documents (e.g. the Anthropic Startups application draft) and must
+# never be published at cdsfilms.com/docs/.
+exclude:
+  - docs/
+  - README.md

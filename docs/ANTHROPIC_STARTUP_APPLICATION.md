@@ -137,13 +137,12 @@ studio. What the repos and live URLs do show:
   1ManABnd supports Codex; Singularity Pencil is BYOK with OpenAI or Anthropic.
 - 1ManABnd is not described as autonomous; human approval is the core design.
 
-## Open items before submitting
+## Pre-submission items (resolved 2026-10-07)
 
-1. **Publish the new homepage.** The redesign lives in the `cdsfilms/web` repo (working copy at
-   `~/Projects/cdsfilms`) and is not pushed yet. cdsfilms.com serves `main` via GitHub Pages.
-2. **Fix https://1manabnd.cdsfilms.com (404 as of 2026-10-07).** The Vercel project
-   `1manabnd-site` is now Git-connected with Root Directory `.`, so pushes to the `1manabnd` repo's
-   `main` create production deployments from the repo root instead of `site/`. Set Root Directory to
-   `site` (Vercel → Project → Settings → Build and Deployment) and redeploy, or disconnect Git and
-   redeploy with `cd site && npx vercel deploy --prod`. This page also backs the Google OAuth
-   consent screen, so it should be fixed regardless of this application.
+1. **New homepage published.** Commit `6905d12` on `cdsfilms/web` `main`; GitHub Pages build
+   verified live at https://cdsfilms.com, and `docs/` returns 404 there.
+2. **https://1manabnd.cdsfilms.com restored.** It returned 404 because the Vercel project
+   `1manabnd-site` had become Git-connected with Root Directory `.`, so pushes to the `1manabnd`
+   repo built from the repo root instead of `site/`. Root Directory is now `site` and production was
+   redeployed; `/`, `/privacy` and `/terms` return 200 and the privacy page shows the
+   7 October 2026 version. Future pushes to `1manabnd` `main` will redeploy this page from `site/`.

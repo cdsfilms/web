@@ -1,0 +1,21 @@
+// Cloudflare Workers (static assets + worker.js). Replaces GitHub Pages; www redirects in worker.js.
+{
+  "$schema": "https://unpkg.com/wrangler@4.151.0/config-schema.json",
+  "name": "cdsfilms-home",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-29",
+  // Keep the workers.dev URL as a direct check that bypasses the custom domains.
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "cdsfilms.com", "custom_domain": true },
+    { "pattern": "www.cdsfilms.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    // The worker sees every request so www can 301 to the apex before any asset is served.
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}

@@ -1,0 +1,13 @@
+# Internal working documents: must never be published (same rule as _config.yml exclude).
+docs
+.claude
+.DS_Store
+.git
+.gitignore
+.wrangler
+CNAME
+_config.yml
+README.md
+worker.js
+wrangler.jsonc
+.assetsignore
